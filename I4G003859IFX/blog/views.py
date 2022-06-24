@@ -36,7 +36,7 @@ class PostUpdateView(UpdateView):
 
 
 
-class DeleteView(UpdateView):
+class PostDeleteView(UpdateView):
     model = Post
     fields = "__all__"
     success_url: reverse_lazy("blog:all")
